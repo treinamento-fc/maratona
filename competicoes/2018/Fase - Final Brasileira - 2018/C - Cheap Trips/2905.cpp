@@ -106,7 +106,7 @@ int duration;
             
             duration -= D[i];
             if(duration < 120.0){
-                if(i-1 >= 0)
+                if(j-1 >= 0)
                     memo[i] = min(memo[i], cost + memo[j-1]);
                 else
                     memo[i] = min(memo[i], cost);
